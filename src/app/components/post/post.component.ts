@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./post.component.css']
 })
 export class PostComponent implements OnInit {
-  title: string = 'Comment board';
-  
+  title: string = 'title placeholder';
+  authorName: string = 'authorName placeholder';
+  body: string = 'body placeholder';
+
+
   constructor() { }
 
   ngOnInit(): void {
