@@ -1,19 +1,2 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>{{title}}</h1>
-    <h2>{{authorName}}</h2>
-    <p>{{body}}</p>
-    <p *ngFor = 'let post of posts'>{{post.body}}</p>
-    <app-button text='Show More' class='showMore'></app-button>
-    <app-button text='Comments (5)' class='comments'></app-button>
-</body>
-</html>
-
-
+<app-post-item *ngFor="let post of posts" [post]="post">
+</app-post-item>

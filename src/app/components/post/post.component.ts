@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { POSTS } from '../../posts';
 import { Post } from '../../Post';
+import { User } from '../../User';
+import { PostService } from '../../services/post.service';
+
 
 @Component({
   selector: 'app-post',
@@ -8,15 +10,14 @@ import { Post } from '../../Post';
   styleUrls: ['./post.component.css']
 })
 export class PostComponent implements OnInit {
-  posts: Post[] = POSTS;  
-  title: string = 'title placeholder';
-  authorName: string = 'authorName placeholder';
-  body: string = 'body placeholder';
+  posts: Post[] = [];  
+  users: User[] = []; 
 
-
-  constructor() { }
+  constructor(private postService: PostService) { }
 
   ngOnInit(): void {
+    this.postService.getPosts().subscribe(posts => this.posts = posts);
+    this.postService.getUsers().subscribe(users => this.users = users);
   }
 
 }
