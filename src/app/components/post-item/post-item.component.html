@@ -1,8 +1,11 @@
+<head>
+    {{post.id}}
+</head>
 <body>
     <h1>{{post.title}}</h1>
     <h2>{{post.userName}}</h2>
     <p>{{post.body}}</p>
 
-    <app-button text='Show More' class='showMore'></app-button>
-    <app-button text='Comments (5)' class='comments'></app-button>
+    <a routerLink="/detail/{{post.id}}"><app-button text='Show More' class='showMore'></app-button></a>
+    <a routerLink="/detail"><app-button text='Comments (5)' class='comments'></app-button></a>
 </body>

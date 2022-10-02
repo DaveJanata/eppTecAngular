@@ -8,8 +8,8 @@ import { Post } from '../../Post';
   styleUrls: ['./post-item.component.css']
 })
 export class PostItemComponent implements OnInit {
-  @Input() post: Post;
   @Input() user: User;
+  @Input() post: Post;
 
   constructor() { 
     this.post = {};

@@ -13,7 +13,7 @@ import { UserService } from '../../services/user.service';
 export class PostComponent implements OnInit {
   posts: Post[] = [];  
   users: User[] = []; 
-
+  
   constructor(private postService: PostService, private userService: UserService) { }
 
 
@@ -27,9 +27,6 @@ export class PostComponent implements OnInit {
     for (let i = 1; i < this.posts.length; i++){
       let postUserId = this.posts[i].userId!;
       this.posts[i].userName = this.users[postUserId].name 
-      if (this.posts[i].body!.length > 20){
-        this.posts[i].body = this.posts[i].body?.slice(0,21); 
-      }
     }
   }
 
