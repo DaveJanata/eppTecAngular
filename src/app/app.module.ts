@@ -9,6 +9,7 @@ import { PostComponent } from './components/post/post.component';
 import { ButtonComponent } from './components/button/button.component';
 import { PostItemComponent } from './components/post-item/post-item.component';
 import { PostDetailComponent } from './components/post-detail/post-detail.component';
+import { PostCommentsComponent } from './components/post-detail/post-comments/post-comments.component';
 
 const appRoutes = [
   {path: '', component: PostComponent},
@@ -21,7 +22,8 @@ const appRoutes = [
     PostComponent,
     ButtonComponent,
     PostItemComponent,
-    PostDetailComponent
+    PostDetailComponent,
+    PostCommentsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,16 @@
+.commentContainer{
+    border: 1px black solid;
+    margin: 1vh;
+    padding: 1vh 2vh;
+}
+
+h1{
+    font-size: 14px;
+}
+h2{
+    font-size: 10px;
+    font-style: italic;
+}
+p{
+    font-size: 12px;
+}

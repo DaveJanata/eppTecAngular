@@ -21,13 +21,9 @@ export class PostComponent implements OnInit {
   ngOnInit(): void {
     this.postService.getPosts().subscribe(posts => this.posts = posts);
     this.userService.getUsers().subscribe(users => this.posts.forEach(post => {
-      post.userName = users[post.userId!].name;
+      post.userName = users[post.userId! - 1].name;
     }));
 
-    for (let i = 1; i < this.posts.length; i++){
-      let postUserId = this.posts[i].userId!;
-      this.posts[i].userName = this.users[postUserId].name 
-    }
   }
 
 }

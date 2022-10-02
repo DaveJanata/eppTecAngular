@@ -1,8 +1,12 @@
 <body>
-    <h1>{{post.title}}</h1>
-    <h2>{{post.userName}}</h2>
-    <p>{{post.body}}</p>
-</body>
+    <a routerLink="/" class="backHome">Back to home page</a>
 
-<p>post-detail works!</p>
-<a routerLink="/">test</a>
+    <div class="originalPost">
+        <h1>{{post.title}}</h1>
+        <h2>{{post.userName}}</h2>
+        <p>{{post.body}}</p>
+    </div>
+    <div class="commentContainer">
+        <app-post-comments *ngFor="let comment of comments" [comment]="comment"></app-post-comments>
+    </div>
+</body>
