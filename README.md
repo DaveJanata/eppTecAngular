@@ -9,6 +9,8 @@ Kód bohužel občas nedodržuje ani základní poučky jako třeba DRY. Někde 
 
 ### Známé bugy
 - Při opakovaném načítání stránky se občas nepropíší jména postujících. Budu rád když mi při druhém kole řeknete co je špatně a jak to opravit.
+- Při testování na localhost lze do URL vložit id určitého postu a aplikace ho najde. Naopak při testování na serveru na Heroku tento feature nefunguje.
 
 ### Zadání
-!['Zadání'](./Uloha_zadani.pdf)
+['Live server na heroku']('https://epptec-angular.herokuapp.com/')
+['Zadání'](./Uloha_zadani.pdf)
