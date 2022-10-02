@@ -19,10 +19,13 @@ export class PostComponent implements OnInit {
 
   // Tenhle kus kódu rozhodně není best-practice. A trvá to dlouho, rozhodně to není O(1). :) Musím zlepšit.
   ngOnInit(): void {
+    
     this.postService.getPosts().subscribe(posts => this.posts = posts);
+
     this.userService.getUsers().subscribe(users => this.posts.forEach(post => {
       post.userName = users[post.userId! - 1].name;
     }));
+    console.log(this.posts);
 
   }
 
