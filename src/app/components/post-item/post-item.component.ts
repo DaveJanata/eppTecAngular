@@ -1,6 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { User } from '../../User';
 import { Post } from '../../Post';
+import { Comment } from '../../Comment';
+import { CommentService } from 'src/app/services/comment.service';
 
 @Component({
   selector: 'app-post-item',
@@ -11,12 +13,19 @@ export class PostItemComponent implements OnInit {
   @Input() user: User;
   @Input() post: Post;
 
-  constructor() { 
+  postId: Number;
+  comments: Array<Comment>;
+
+  constructor(private commentService: CommentService) { 
     this.post = {};
     this.user = {};
+    this.comments = [];
+    this.postId = 0;
   }
 
   ngOnInit(): void {
+    this.postId = this.post.id!;
+    this.commentService.getComments().subscribe(comment => this.comments = comment.filter(comment => comment.postId === this.postId));
   }
 
 }
