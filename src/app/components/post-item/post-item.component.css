@@ -16,6 +16,11 @@ body{
     text-decoration: underline;
 }
 
+.showMore:hover, .comments:hover{
+    color: gray;
+    cursor: pointer;
+}
+
 .comments{
     position: relative;
     top: 3px;

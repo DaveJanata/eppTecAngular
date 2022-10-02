@@ -1,3 +1,8 @@
-export interface User{
-    name?: string;        
+export interface User{        
+    id?: number,
+    name?: string,
+    username?: string,
+    email?: string,
+    address?: {};
+
 }
