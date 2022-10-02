@@ -11,4 +11,4 @@ Kód bohužel občas nedodržuje ani základní poučky jako třeba DRY. Někde 
 - Při opakovaném načítání stránky se občas nepropíší jména postujících. Budu rád když mi při druhém kole řeknete co je špatně a jak to opravit.
 
 ### Zadání
-!['Zadání'](epptec\Úloha Junior FE Developer (v 22_06.1).pdf)
+!['Zadání'](./Uloha_zadani.pdf)
