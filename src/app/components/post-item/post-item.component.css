@@ -5,9 +5,9 @@
 body{
     border: 1px solid var(--GrayishBlue);
     background-color: var(--LightGrayBlue);
-    border-radius: 3px;
+    border-radius: 0px;
     padding: 10px 2%;
-    margin-top: 10px;
+    margin-top: 2vh;
     min-height: 10vh;
 }
 
