@@ -1,7 +1,10 @@
 .commentContainer{
-    border: 1px black solid;
+    border-left: 1px var(--DarkGrayBlue) solid ;
+    background-color: var(--LightGrayBlue);
+    box-shadow: -1px 0px;
     margin: 1.4vh 0;
     padding: 1vh 2vh;
+    border-radius: 10px;
 }
 
 h1{
@@ -10,8 +13,9 @@ h1{
 h2{
     font-size: 10px;
     font-style: italic;
-    color: gray;
+    color: var(--GrayishBlue);
 }
 p{
+    margin-top: 1%;
     font-size: 12px;
 }

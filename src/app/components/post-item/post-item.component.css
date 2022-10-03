@@ -3,21 +3,24 @@
 }
 
 body{
-    border: 1px solid blue;
+    border: 1px solid var(--GrayishBlue);
+    background-color: var(--LightGrayBlue);
     border-radius: 3px;
     padding: 10px 2%;
     margin-top: 10px;
+    min-height: 10vh;
 }
 
 
 .showMore, .comments{
+    margin-top: 1vh;
     font-size: 12px;
     display: inline-block;
     text-decoration: underline;
 }
 
 .showMore:hover, .comments:hover{
-    color: gray;
+    color: var(--GrayishBlue);
     cursor: pointer;
 }
 
@@ -34,13 +37,18 @@ h1{
 }
 /* author name */
 h2{
+    margin-top: 1vh;
     font-size: 12px;
     font-style: italic;
     font-weight: 300;
     text-decoration: underline;
 }
 /* body text */
+.bodyContainer{
+    margin-top: 1%;
+}
 p {
+    color: var(--DarkGrayBlue);
     font-size: 14px;
 }
 

@@ -1,4 +1,4 @@
-# Epptec interview coding assignment
+## Epptec interview coding assignment
 Zdravím. 
 Vítejte u mého řešení úlohy Junior FE developer.
 
@@ -9,8 +9,11 @@ Kód bohužel občas nedodržuje ani základní poučky jako třeba DRY. Někde 
 
 ### Známé bugy
 - Při opakovaném načítání stránky se občas nepropíší jména postujících. Budu rád když mi při druhém kole řeknete co je špatně a jak to opravit.
-- Při testování na localhost lze do URL vložit id určitého postu a aplikace ho najde. Naopak při testování na serveru na Heroku tento feature nefunguje.
+- ~~Při testování na localhost lze do URL vložit id určitého postu a aplikace ho najde. Naopak při testování na serveru na Heroku tento feature nefunguje.~~ -Opraveno
 
-### Zadání
-['Live server na heroku']('https://epptec-angular.herokuapp.com/')
-['Zadání'](./Uloha_zadani.pdf)
+### Chybějící feature
+- Na hlavní stánce by mělo body postu mít omezenou délku a až po rozkliknutí by se měl ukázat plný text. Toto se mi nedaří jednoduše implementovat. Narážím na stejný problém jako u bugu s občasným nenačtením jmen. *Myslím*, že skript který by měl body zkracovat probíhá dřív než se naplní array postů.
+
+### Appendix
+- ['Live server na heroku'](https://epptec-angular.herokuapp.com/)
+- ['Zadání'](./Uloha_zadani.pdf)

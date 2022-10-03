@@ -10,9 +10,9 @@ import { HttpClient } from '@angular/common/http';
 
 export class UserService {
   private usersUrl = 'https://jsonplaceholder.typicode.com/users';
-  private commentsUrl = 'https://jsonplaceholder.typicode.com/comments';
 
   constructor(private http: HttpClient) {}
+  
    getUsers(): Observable<User[]> {
     return this.http.get<User[]>(this.usersUrl);
   }

@@ -6,7 +6,8 @@
         <h2>{{post.userName}}</h2>
         <p>{{post.body}}</p>
     </div>
-    <div class="commentContainer">
+    <div class="commentsContainer">
+        <h3>Comments</h3>
         <app-post-comments *ngFor="let comment of comments" [comment]="comment"></app-post-comments>
     </div>
 </body>

@@ -25,7 +25,6 @@ export class PostComponent implements OnInit {
     this.userService.getUsers().subscribe(users => this.posts.forEach(post => {
       post.userName = users[post.userId! - 1].name;
     }));
-    console.log(this.posts);
 
   }
 

@@ -2,8 +2,9 @@
 <body>
     <h1>{{post.title}}</h1>
     <h2>{{post.userName}}</h2>
-    <p>{{post.body}}</p>
-
+    <div class="bodyContainer">
+        <p>{{post.body}}</p>
+    </div>
     <a routerLink="/detail/{{post.id}}"><app-button text='Show More' class='showMore'></app-button></a>
     <a routerLink="/detail/{{post.id}}"><app-button text='Comments {{comments.length}}' class='comments'></app-button></a>
 </body>
